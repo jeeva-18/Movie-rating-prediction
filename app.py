@@ -8,9 +8,10 @@ import tensorflow_text as text
 tf.get_logger().setLevel('ERROR')
 
 model = tf.saved_model.load('./models')
-text = ["happy happy happy "]
+text = []
 t = str(st.text_input('comments'))
 if t.isalnum():
-  score = tf.sigmoid(model(tf.constant(list(t))))
+  text.append(t)
+  score = tf.sigmoid(model(tf.constant(text)))
   st.write(score)
 
