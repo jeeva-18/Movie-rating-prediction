@@ -6,11 +6,9 @@ import tensorflow_text as text
 
 
 tf.get_logger().setLevel('ERROR')
-def main():
-    model = tf.saved_model.load('./models')
-    text = ["happy happy happy "]
-    score = tf.sigmoid(model(tf.constant(text)))
-    st.write(score)
 
-if __name__ == '__main__':
-    main()
+model = tf.saved_model.load('./models')
+text = ["happy happy happy "]
+score = tf.sigmoid(model(tf.constant(text)))
+st.write(score)
+
