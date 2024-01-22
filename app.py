@@ -12,6 +12,7 @@ text = []
 t = str(st.text_input('comments'))
 text.append(t)
 st.write(len(text))
+st.write(text)
 if len(text) == 1 :
   score = tf.sigmoid(model(tf.constant(text)))
   st.write(score)
