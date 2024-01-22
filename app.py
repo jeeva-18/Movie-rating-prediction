@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 import tensorflow as tf
 
 tf.get_logger().setLevel('ERROR')
