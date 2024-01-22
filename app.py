@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import streamlit as st
 import tensorflow as tf
 import tensorflow_text as text
