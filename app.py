@@ -9,7 +9,6 @@ tf.get_logger().setLevel('ERROR')
 def main():
     model = tf.saved_model.load('./models')
     st.header('Hello da')
-    model.summary()
 
 if __name__ == '__main__':
     main()
