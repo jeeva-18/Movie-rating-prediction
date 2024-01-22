@@ -7,7 +7,7 @@ import tensorflow_text as text
 
 tf.get_logger().setLevel('ERROR')
 def main():
-    model = tf.saved_model.load('./models'
+    model = tf.saved_model.load('./models')
     st.header('Hello da')
     model.summary()
 
