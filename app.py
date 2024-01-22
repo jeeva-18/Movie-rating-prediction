@@ -1,8 +1,13 @@
 import streamlit as st
 import tensorflow as tf
+import tensorflow_text as text
+
 
 tf.get_logger().setLevel('ERROR')
+def main():
+    model = tf.saved_model.load('./models'
+    st.header('Hello da')
+    model.summary()
 
-st.header('Hello da')
-
-model = tf.saved_model.load('./models')
+if __name__ == '__main__':
+    main()
