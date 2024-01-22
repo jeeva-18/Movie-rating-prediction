@@ -10,7 +10,7 @@ tf.get_logger().setLevel('ERROR')
 model = tf.saved_model.load('./models')
 text = ["happy happy happy "]
 t = str(st.text_input('comments'))
-st.write(type(t))
-score = tf.sigmoid(model(tf.constant(text)))
+st.write(t.isalnum())
+# score = tf.sigmoid(model(tf.constant(t)))
 st.write(score)
 
