@@ -10,7 +10,7 @@ def main():
     model = tf.saved_model.load('./models')
     text = st.text_input('Comments')
     score = tf.sigmoid(reloaded_model(tf.constant(text)))
-    print(score)
+    st.write(score)
 
 if __name__ == '__main__':
     main()
