@@ -16,5 +16,6 @@ st.write(text)
 if len(text) == 1 :
   # text.pop(0)
   score = tf.sigmoid(model(tf.constant(text)))
-  st.write(score[0][0].numpy())
+  ratings = score[0][0].numpy()
+  st.write(ratings*5)
 
