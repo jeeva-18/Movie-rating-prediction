@@ -13,7 +13,7 @@ t = str(st.text_input('comments'))
 text.append(t)
 st.write(len(text))
 st.write(text)
-if len(text) == 1 :
+if text != ""  :
   # text.pop(0)
   score = tf.sigmoid(model(tf.constant(text)))
   ratings = score[0][0].numpy()
