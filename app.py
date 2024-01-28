@@ -6,7 +6,7 @@ import tensorflow_text as text
 
 
 tf.get_logger().setLevel('ERROR')
-st.title(🎞Movie Rating prediction🎭)
+st.title("🎞Movie Rating prediction🎭")
 
 model = tf.saved_model.load('./models')
 text = []
