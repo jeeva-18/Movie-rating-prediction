@@ -6,6 +6,7 @@ import tensorflow_text as text
 
 
 tf.get_logger().setLevel('ERROR')
+st.set_page_config(layout="wide")
 st.title("🎞Movie Rating prediction🎭")
 
 model = tf.saved_model.load('./models')
