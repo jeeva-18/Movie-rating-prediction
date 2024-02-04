@@ -7,7 +7,7 @@ import tensorflow_text as text
 
 tf.get_logger().setLevel('ERROR')
 st.set_page_config(layout="wide")
-st.title("🎞Movie Rating prediction🎭")
+st.title("An NLP-Powered Authentic Rating System for E-commerce🛒🥼 & movies🎞🎭")
 
 model = tf.saved_model.load('./models')
 text = []
