@@ -11,7 +11,7 @@ st.title("An NLP-Powered Authentic Rating System for E-commerce🛒🥼 & movies
 
 model = tf.saved_model.load('./models')
 text = []
-t = str(st.text_input('Comments/Review'))
+t = str(st.text_input('Comments/Review:'))
 text.append(t)
 # st.write(len(text))
 # st.write(text)
